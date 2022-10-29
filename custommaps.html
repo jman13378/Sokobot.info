@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<head>
+
+<!--      CSS       -->
+
+<link href="css/style.css" rel="stylesheet">
+
+<!--      META       -->
+
+<title>Sokobot - Custom Maps</title>
+<meta charset="utf-8">
+<meta name="description" content="A discord bot made with JDA, allows the user to play SokoBan">
+<meta name="keywords" content="sokobot,jonathan_nathan">
+<meta name="author" content="Jonathan">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Sokobot">
+<meta property="og:description" content="A discord bot made with JDA, allows the user to play SokoBan">
+<meta property="og:url" content="https://discord.gg/czEKF4Edcz">
+<meta property="og:image" content="https://garconia-net.000webhostapp.com/img/logo.jpg">
+<link rel="icon" href="img/logo.jpg" type="image/jpg">
+
+<script>
+function ripo() {
+    if (document.getElementById("he").checked) {
+        document.getElementById("lel").removeAttribute("disabled");
+        document.getElementById("lel").setAttribute("enabled","enabled");
+        document.getElementById("lel").removeAttribute("src");
+        document.getElementById("lel").setAttribute("src", "img/submiton.png");
+    } else if (!document.getElementById("he").checked){
+        document.getElementById("lel").removeAttribute("enabled");
+        document.getElementById("lel").setAttribute("disabled","disabled");
+        document.getElementById("lel").removeAttribute("src");
+        document.getElementById("lel").setAttribute("src", "img/submitoff.png");
+    }
+}
+
+function lol() {
+    let destinations = 0;
+    let boxes = 0;
+    var debug = false;
+    let publicity = document.getElementById("publicity");
+    let title = document.getElementById("gametitle").value;
+    
+    if (publicity.checked) {
+        publicity =  "true";
+    } else {
+        publicity = "false";
+    }
+    if (title.length == 0) {
+        window.alert("Please provide a Game Title");
+        return;
+    }
+    
+    const map = [];
+    for (let i = 0; i < 71; i++) {
+        var cb = document.getElementsByName("cb" + i.toString())[0];
+        if (cb.indeterminate) {
+            boxes += 1;
+            map[i]= "B";
+            
+        } else if (cb.checked) {
+            destinations += 1;
+            map[i]= "D";
+            
+        } else {
+            map[i]= "E";
+        }
+        
+    }
+    if (boxes == destinations) {
+        navigator.clipboard.writeText("!custommap create " + map + " " + publicity + " " + title);
+        if (debug){
+        window.alert(destinations.toString() + boxes.toString() + title + publicity + "\n\n" + map);}
+        
+    } else {
+        window.alert("Sorry you need to have equal amount of both Boxes and Destinations");
+    }
+}
+</script>
+
+
+<script>
+    
+    function ts(cb) {
+  if (cb.readOnly) cb.checked=cb.readOnly=false;
+  else if (!cb.checked) cb.readOnly=cb.indeterminate=true;
+}
+</script>
+<style>
+    /*
+* CUSTOM MAPS
+*/
+#game-creator {
+    text-align:center;
+    border-color: blue;
+    border-style: solid;
+}
+#chbox {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#chboxInner {
+    margin: 0px;
+
+}
+#cb:indeterminate {
+    accent-color: #ad8762;
+    display: inline-grid;
+}
+#cb:indeterminate  {
+    accent-color: #77b255;
+    display: inline-grid;
+}
+#cb:indeterminate::after {
+    content: "🟫";
+    bottom: 1%;
+}
+#cb:checked::after  {
+    content: "🟩";
+
+}
+</style>
+</head>
+
+
+<nav id="nav">
+
+<div id="navtext-div">
+
+<a href="developers.html" id="navtext">Developers</a>
+
+<a href="index.html" id="navtext">Home</a>
+
+<a href="commands.html" id="navtext">Commands</a>
+
+<a href="socials.html" id="navtext">Socials</a>
+<a id="navtext" style="color: #fafafa;">Custom Maps</a>
+</div>
+
+</nav>
+
+
+
+
+
+<body>
+
+    <img id="logo-main-1" src="img/logo.jpg" style="height: 128px; width: 128px;">
+
+    <p id="botname-main-1">Sokobot</p>
+
+
+    <div id="main-buttons">
+
+        <a href="#intro"><button id="main-button-1">Know More</button></a>
+
+        <a href="http://sokobot.sytes.net"><button id="main-button-2">Invite Me!</button></a>
+
+    </div>
+
+    <div style="margin:50px 0 50px 0;"></div>
+
+
+    <div id="main-info" >
+
+    <h1>Map Options</h1>
+    <p style="margin-right: 30%;"> checked box means a destination will be there.</p>
+    <p style="margin-right: 30%;"> Minus box means a box will be there.</p>
+<form id="game-creator">
+<p id="chbox">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb0">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb1">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb2">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb3">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb4">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb5">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb6">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb7">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb8">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb9">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb10">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb11">
+</p>
+<p id="chbox">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb12">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb13">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb14">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb15">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb16">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb17">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb18">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb19">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb20">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb21">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb22">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb23">
+</p>
+<p id="chbox">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb24">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb25">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb26">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb27">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb28">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb29">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb30">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb31">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb32">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb33">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb34">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb35">
+</p>
+<p id="chbox">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb36">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb37">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb38">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb39">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb40">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb41">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb42">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb43">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb44">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb45">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb46">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb47">
+</p>
+<p id="chbox">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb48">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb49">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb50">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb51">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb52">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb53">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb54">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb55">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb56">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb57">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb58">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb59">
+</p>
+<p id="chbox">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb60">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb61">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb62">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb63">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb64">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb65">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb66">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb67">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb68">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb69">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb70">
+<input type="checkbox" onclick="ts(this)" id="cb" name="cb71">
+</p>
+<label>Game Title </label><input type="text" id="gametitle">
+<p>
+<label>Publicity</label><input type="checkbox" id="publicity">
+</p>
+<p>By clicking Submit you are allowing the site to copy the value to your clipboard</p>
+<input type="checkbox" onclick="ripo()" id="he">
+
+<input type="image" style="height: 30%; width: 30%; margin-right: 10%;" src="img/submitoff.png" value="Submit" onclick="lol()" disabled id="lel">
+</form>
+
+
+    </div>
+<!--                       WEBSITE BY GRIMREAPER007-->
+    <div id="main-buttons" style="margin-top: 200px;">
+        <a href="https://discord.gg/czEKF4Edcz"><button id="main-button-2-1" onclick="hehe()">Join support server</button></a>    
+
+    </div>
+
+
+
+
+<footer>
+
+    <p id="footer-copyright">©️2021 All rights reserved.</p>
+
+    <a href="https://discord.gg/czEKF4Edcz">
+        <p id="footer-credits">
+            &#8883; Created by Jonathan_Nathan
+        </p>
+    </a>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
