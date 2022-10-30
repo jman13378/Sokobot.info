@@ -2,7 +2,7 @@
 Options +FollowSymLinks
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^sokobot.info[nc]
-RewriteRule ^(.*)$ http://www.sokobot.info/$1 [r=301,nc]
+RewriteRule ^(.*)$ https://www.sokobot.info/$1 [r=301,nc]
 
 //Caching schema
 <FilesMatch "\.(jpg|png|css|js|md)$">
