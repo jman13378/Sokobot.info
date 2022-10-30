@@ -1,22 +1,15 @@
-//Rewrite to www
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^sokobot.info[nc]
-RewriteRule ^(.*)$ https://www.sokobot.info/$1 [r=301,nc]
-
 //Caching schema
 <FilesMatch "\.(jpg|png|css|js|md)$">
 Header set Cache-Control "max-age=0"
 </FilesMatch>
 
 //Password Protect file
-<Files tesing.html>
+<Files /tesing.html>
 AuthName "Prompt"
 AuthType Basic
-AuthUserFile 
+AuthUserFile /.htpassword
 Require valid-user
 </Files>
- 
 
 //Custom 403 errors
 ErrorDocument 403 403.html
