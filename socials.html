@@ -1,241 +1,136 @@
 <!DOCTYPE html>
 
 <head>
+  <!--      CSS       -->
 
-<!--      CSS       -->
+  <link href="css/style.css" rel="stylesheet" />
 
-<link href="css/style.css" rel="stylesheet">
+  <!--      META       -->
 
-<!--      META       -->
+  <title>Sokobot - Socials</title>
 
-<title>Sokobot - Socials</title>
-
-
-<meta charset="utf-8">
-<meta name="description" content="A discord bot made with JDA, allows the user to play SokoBan">
-<meta name="keywords" content="sokobot,jonathan_nathan">
-<meta name="author" content="Jonathan">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="Sokobot">
-<meta property="og:description" content="A discord bot made with JDA, allows the user to play SokoBan">
-<meta property="og:url" content="https://discord.gg/czEKF4Edcz">
-<meta property="og:image" content="https://garconia-net.000webhostapp.com/img/logo.jpg">
-<link rel="icon" href="img/logo.jpg" type="image/jpg">
+  <meta charset="utf-8" />
+  <meta
+    name="description"
+    content="A discord bot made with JDA, allows the user to play SokoBan"
+  />
+  <meta name="keywords" content="sokobot,jonathan_nathan" />
+  <meta name="author" content="Jonathan" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Sokobot" />
+  <meta
+    property="og:description"
+    content="A discord bot made with JDA, allows the user to play SokoBan"
+  />
+  <meta property="og:url" content="https://discord.gg/czEKF4Edcz" />
+  <meta
+    property="og:image"
+    content="https://garconia-net.000webhostapp.com/img/logo.jpg"
+  />
+  <link rel="icon" href="img/logo.jpg" type="image/jpg" />
 </head>
 
-
 <nav id="nav">
+  <div id="navtext-div">
+    <a href="developers.html" id="navtext">Developers</a>
 
-<div id="navtext-div">
+    <a href="index.html" id="navtext">Home</a>
 
-<a href="developers.html" id="navtext">Developers</a>
-
-<a href="index.html" id="navtext">Home</a>
-
-<a href="commands.html" id="navtext">Commands</a>
-<a id="navtext">Socials</a><a href="custommaps.html" id="navtext">Custom Maps</a>
-</div>
-
+    <a href="commands.html" id="navtext">Commands</a>
+    <a id="navtext">Socials</a
+    ><a href="custommaps.html" id="navtext">Custom Maps</a>
+  </div>
 </nav>
 <!--                       WEBSITE BY GRIMREAPER007-->
 
-
-
-
 <body>
+  <img
+    id="logo-main-1"
+    src="img/logo.jpg"
+    style="height: 128px; width: 128px"
+  />
 
-<img id="logo-main-1" src="img/logo.jpg" style="height: 128px; width: 128px;">
+  <p id="botname-main-1">Socials</p>
 
-<p id="botname-main-1">Socials</p>
+  <div id="main-buttons">
+    <a href="#intro"><button id="main-button-1">Know More</button></a>
 
+    <a href="http://sokobot.sytes.net"
+      ><button id="main-button-2">Invite Me!</button></a
+    >
+  </div>
 
-    <div id="main-buttons">
+  <div style="margin: 50px 0 50px 0"></div>
 
-        <a href="#intro"><button id="main-button-1">Know More</button></a>
+  <div id="socials"></div>
 
-        <a href="http://sokobot.sytes.net"><button id="main-button-2">Invite Me!</button></a>
-
+  <div id="socials-grid">
+    <div id="socials-minigrid-header">
+      <p id="socials-name-header">Game</p>
     </div>
-
-<div style="margin:50px 0 50px 0;"></div>
-
-<div id="socials"></div>
-
-<div id="socials-grid">
-<div id="socials-minigrid-header">
-    <p id="socials-name-header">Game</p>
-</div>
-<div id="socials-minigrid">
-<p id="socials-name">Twitter</p>
-<img id="socials-icon" src="img/logo.jpg" type="image/jpg" style="height: 128px; width: 128px;">
-
-<img id="socials-icon" src="img/twitter.png" type="image/png" alt="Twitter Logo" style="height: 128px; width: 128px;">
-
-</div>
-
-<div id="socials-minigrid">
-
-<p id="socials-name">!stop</p>
-
-<p id="socials-desc">Can be used to stop your active game at any time.</p>
-
-</div>
-<div id="socials-minigrid-header">
-    <p id="socials-name-header">Economy</p>
-</div>
-<div id="socials-minigrid">
-
-<p id="socials-name">!bal</p>
-    
-<p id="socials-desc">Shows the users balance.</p>
-    
-</div>
-
-<div id="socials-minigrid">
-
-<p id="socials-name">!invite</p>
-        
-<p id="socials-desc">Send bot invite link.</p>
-        
-</div>
-
-<div id="socials-minigrid">
-
-<p id="socials-name">!fish</p>
-    
-<p id="socials-desc">Will let the user go fishing.</p>
-    
-</div>
-
-<div id="socials-minigrid">
-
-<p id="socials-name">!chop</p>
-    
-<p id="socials-desc">Will let the user chop down trees.</p>
-    
-</div>
-<div id="socials-minigrid">
-
-<p id="socials-name">!mine</p>
-    
-<p id="socials-desc">Will let the user go mining.</p>
-    
-</div>
-<div id="socials-minigrid">
-
-<p id="socials-name">!filet</p>
-    
-<p id="socials-desc">Will let the user filet their fish to sell for more money.</p>
-    
-</div>
-<div id="socials-minigrid">
-
-<p id="socials-name">!shop</p>
-    
-<p id="socials-desc">Sends an embed with the items you can buy/sell.</p>
-    
-</div>
-<div id="socials-minigrid">
-
-<p id="socials-name">!sell &lt;item&gt; &lt;amt|max&gt;</p>
-    
-<p id="socials-desc">sells items to the shop. fishing is different !sell fish &lt;rarity&gt; &lt;size&gt; &lt;amt&gt;</p>
-</div>
-<div id="socials-minigrid">
-
-<p id="socials-name">!inv</p>
-    
-<p id="socials-desc">Sends an embed with your current inventory items.</p>
-</div>
-<div id="socials-minigrid">
-
-<p id="socials-name">!buy &lt;item&gt; &lt;amt|max&gt;</p>
-    
-<p id="socials-desc"> Toggle pruning of bot messages</p>
-</div>
-<div id="socials-minigrid-header">
-    <p id="socials-name-header">Misc</p>
-</div>
-
-<div id="socials-minigrid">
-
-<p id="socials-name">!help</p>
-    
-<p id="socials-desc">Provides some info on the socials and their usage on the bot.</p>
-</div>
-
-<div id="socials-minigrid">
-
-<p id="socials-name">!info</p>
-    
-<p id="socials-desc">Provides some info on the bots status and links for the bot.</p>
-</div>
-<div id="socials-minigrid">
-
-<p id="socials-name">!fishing</p>
-    
-<p id="socials-desc">Provides some info on the fishing aspect of the bot.</p>
-</div>
-<div id="socials-minigrid-header">
-    <p id="socials-name-header">Server Admin</p>
-</div>
-<div id="socials-minigrid">
-
-<p id="socials-name">!prefix &lt;character&gt;</p>
-    
-<p id="socials-desc">Can be used to change the prefix to whatever the user puts in &lt;character&gt; the char must be 1 character long.</p>
-</div>
-
-</div>
-
-
-
+    <div id="socials-minigrid">
+      <p id="socials-name">Twitter</p>
+      <a href="https://twitter.com/SokobotStatus">
+        <img
+          id="socials-icon"
+          src="img/twitter.png"
+          type="image/png"
+          alt="Twitter Logo"
+          id="socials-social"
+        />
+      </a>
+    </div>
+  </div>
 </body>
 
-
 <footer>
-    <p id="footer-copyright">©️2022 All rights reserved.</p>
+  <p id="footer-copyright">©️2022 All rights reserved.</p>
 
-    <h2 align="center" style="
-        text-align: center;
-        color: #99aab5;
-        font-family: Black Ops one;">
+  <h2
+    align="center"
+    id="contacts">
     Contacts
-    </h2>
-    <p style="border-top: solid #23272a 5px;"></p>
-    <div id="footer-support" style="display: inline;">
-        <span class="ui" style="background-color: #EA4335; color: white;">
-            <a href="https://mail.google.com/mail/u/0/?fs=1&to=jonathan@sokobot.info&tf=cm">Email - support@sokobot.info</a>
-        </span>
-        <span class="ui" style="background-color: #7289da; color: white;">
-            <a href="https://discord.com/invite/QfTjApqtb4">Discord - Server</a>
-        </span>
-        <span class="ui" style="background-color: #7289da; color: white;">
-            <a href="https://discord.com/users/766104191403163708">Discord - Personal</a>
-        </span>
-        <span class="ui" style="background-color: #1D9BF0; color: white;">
-            <a href="https://twitter.com/SokobotStatus">Twitter - Bot</a>
-        </span>
-        <span class="ui" style="background-color: #1D9BF0; color: white;">
-            <a href="https://twitter.com/jman13378">Twitter - Personal</a>
-        </span>
-        <span class="ui" style="background-color: #FF4500; color: white;">
-            <a href="https://reddit.com/r/Sokobot">Reddit - subreddit</a>
-        </span>
-        <span class="ui" style="background-color: #FF4500; color: white;">
-            <a href="https://twireddittter.com/u/Garconia_cf">Reddit - Personal</a>
-        </span>
-        <span class="ui" style="background-color: #161B22; color: white;">
-            <a href="https://github.com/jman13378">Github - Personal</a>
-        </span>
+  </h2>
+  <p id="line-break"></p>
+  <div id="footer-support" style="display: inline">
+    <span class="footer-contact" style="background-color: #ea4335; color: white">
+      <a
+        href="https://mail.google.com/mail/u/0/?fs=1&to=jonathan@sokobot.info&tf=cm"
+        >Email - support@sokobot.info</a
+      >
+    </span>
+    <span class="footer-contact" style="background-color: #7289da; color: white">
+      <a href="https://discord.com/invite/QfTjApqtb4">Discord - Server</a>
+    </span>
+    <span class="footer-contact" style="background-color: #7289da; color: white">
+      <a href="https://discord.com/users/766104191403163708"
+        >Discord - Personal</a>
+    </span>
+    <span class="footer-contact" style="background-color: #1d9bf0; color: white">
+      <a href="https://twitter.com/SokobotStatus">Twitter - Bot</a>
+    </span>
+    <span class="footer-contact" style="background-color: #1d9bf0; color: white">
+      <a href="https://twitter.com/jman13378">Twitter - Personal</a>
+    </span>
+    <span class="footer-contact" style="background-color: #ff4500; color: white">
+      <a href="https://reddit.com/r/Sokobot">Reddit - subreddit</a>
+    </span>
+    <span class="footer-contact" style="background-color: #ff4500; color: white">
+      <a href="https://twireddittter.com/u/Garconia_cf">Reddit - Personal</a>
+    </span>
+    <span class="footer-contact" style="background-color: #161b22; color: white">
+      <a href="https://github.com/jman13378">Github - Personal</a>
+    </span>
 
-        <button class="ui" style="background-color: #01C022; color: white;" onclick="navigator.clipboard.writeText('3218312556')">Phone - Personal - 1+ (321)-831-2556</button>
-    </div>
-    <p style="border-top: solid #23272a 5px;"></p>  
-        <p id="footer-credits">
-            &#8883; Created by Jonathan_Nathan
-        </p>        
-    </footer>
+    <button
+      class="ui"
+      style="background-color: #01c022; color: white"
+      onclick="navigator.clipboard.writeText('3218312556')">
+      Phone - Personal - 1+ (321)-831-2556
+    </button>
+  </div>
+  <p id="line-break"></p>
+  <p id="footer-credits">&#8883; Created by Jonathan_Nathan</p>
+</footer>
 
 <script src="js/script3.js"></script>
-<!--                       WEBSITE BY GRIMREAPER007>
