@@ -1,5 +1,7 @@
 /*                IMPORTS              */
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
@@ -7,7 +9,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
 
+
 /*                         GENERAL           */
+
+
+
 img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
 
 html {
@@ -17,8 +23,31 @@ html {
     overflow-x: hidden;
 }
 
+#line-break {
+    border-top: solid #23272a 5px;
+}
+
+#contacts {
+    text-align: center; 
+    color: #99aab5; 
+    font-family: "Black Ops one";
+}
+
+#link {
+    color: #3f3cc9
+}
+
+a {
+    color: unset;
+    outline: none;
+    text-decoration: none;
+}
+
+
 
 /*                             NAVBAR               */
+
+
 
 nav {
     background-color: #23272a;
@@ -95,6 +124,7 @@ nav {
     filter: drop-shadow(2px 4px 10px #181a1d);
     outline: none;
 }
+
 #main-button-2-1 {
     width: 200px;
     height: 50px;
@@ -203,9 +233,6 @@ nav {
     outline: none;
 }
 
-/* BY CREPER92YT 
-www.creper92.tk*/
-
 #main-info {
     font-family: "Bungee";
     color: #ffffff;
@@ -222,7 +249,9 @@ www.creper92.tk*/
 }
 
 
+
 /*                   FOOTER                */
+
 
 
 footer {
@@ -246,14 +275,9 @@ footer {
     color: white
 }
 
-a {
-    color: unset;
-    outline: none;
-    text-decoration: none;
-}
 
 
-.ui {
+.footer-contact {
     display: inline-block;
     line-height: 1;
     vertical-align: baseline;
@@ -274,11 +298,9 @@ a {
 
 
 
-
-
-
-
 /*                   DEVELOPERS PAGE                           */
+
+
 
 #developers-grid {
     display: flex;
@@ -369,7 +391,10 @@ a {
 }
 
 
-/*                 COMMANDS                              */
+
+/*                 COMMANDS                 */
+
+
 
 #commands-grid {
 color: sas;
@@ -392,6 +417,7 @@ color: sas;
     color: #99aab5;
     font-family: "Aldrich";
 }
+
 #commands-minigrid-header {
     background-color: #23272a;
     border-radius: 10px;
@@ -408,12 +434,14 @@ color: sas;
 
 
 
+/*                  SOCIALS                  */
 
-/*
-* SOCIALS
-*/
+
+
 #socials-grid {
-color: sas;
+    color: sas;
+    justify-content: space-around;
+    display: flex;
 }
 
 #socials-minigrid {
@@ -421,6 +449,7 @@ color: sas;
     border-radius: 10px;
     padding: 10px 30px 10px 30px;
     margin-top: 10px;
+
 }
 
 #socials-name {
@@ -456,6 +485,7 @@ color: sas;
     font-size: xx-large
 }
 
-
-
-
+#socials-social {
+    height: 128px; 
+    width: 128px
+}
