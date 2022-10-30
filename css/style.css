@@ -95,12 +95,39 @@ nav {
     filter: drop-shadow(2px 4px 10px #181a1d);
     outline: none;
 }
-
 #main-button-2-1 {
     width: 200px;
     height: 50px;
     border-radius: 40px;
     background-color: #7289da;
+    border: none;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    font-family: "Aldrich";
+}
+
+#main-button-2-1-discord {
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #7289da;
+    border: none;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    font-family: "Aldrich";
+}
+
+#main-button-2-1-reddit {
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #FF4500;
     border: none;
     color: white;
     transition: 0.5s;
@@ -221,7 +248,24 @@ a {
 }
 
 
-
+.ui {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: baseline;
+    margin: 0 0.14285714em;
+    background-color: #e8e8e8;
+    background-image: none;
+    padding: 0.3em;
+    color: rgba(0,0,0,.6);
+    text-transform: none;
+    font-size: .85714286rem;
+    font-weight: 700;
+    border: 0 solid transparent;
+    border-radius: 0.28571429rem;
+    -webkit-transition: background .1s ease;
+    transition: background .1s ease;
+    font-family: "Black Ops one";
+}
 
 
 
