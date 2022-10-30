@@ -10,12 +10,13 @@ Header set Cache-Control "max-age=0"
 </FilesMatch>
 
 //Password Protect file
-<Files /testing.html>
+<Files testing.html>
 AuthName "Prompt"
 AuthType Basic
 AuthUserFile 
 Require valid-user
 </Files>
+ 
 
 //Custom 403 errors
 ErrorDocument 403 403.html
