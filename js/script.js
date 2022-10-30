@@ -20,11 +20,13 @@ function moveToMobile() {
     let author = document.getElementById('creper92yt')
     let mainbuttons = document.getElementById('main-buttons');
     let mainbuttons2 = document.getElementById('main-buttons-2');
+    
     let mainbutton2 = document.getElementById('main-button-2')
     let mainbutton3 = document.getElementById('main-button-4')
     let info = document.getElementById('main-info-1');
     let info2 = document.getElementById('main-info-2');
     
+    let footersupport = document.getElementById('footer-support');
     
     nav.style.padding = "50px 0 50px";
     navdiv.style.justifyContent = "none";
@@ -38,6 +40,8 @@ function moveToMobile() {
     logomainheight = Math.round(logomainheight)
 
     logomain.style.height = logomainheight + "px"
+
+    footersupport.style.display = "grid";
 
     mainbuttons.style.display = "grid";
     mainbuttons2.style.display = "grid";
