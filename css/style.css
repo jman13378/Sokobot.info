@@ -470,6 +470,8 @@ color: sas;
     border: solid #7289da 5px;
     max-width: -webkit-fill-available;
     max-height: 400px;
+    height: 130px; 
+    width: 140px
 }
 #socials-minigrid-header {
     background-color: #23272a;
