@@ -10,7 +10,7 @@ Header set Cache-Control "max-age=0"
 </FilesMatch>
 
 //Password Protect file
-<Files /tesing.html>
+<Files /tesing>
 AuthName "Prompt"
 AuthType Basic
 AuthUserFile /.htpassword
