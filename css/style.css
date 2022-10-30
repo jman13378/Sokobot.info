@@ -235,10 +235,12 @@ footer {
     color: #99aab5;
     font-family: "Black Ops one";
 }
+
 #footer-support {
     display: inline; 
     justify-content: space-evenly;
 }
+
 #footer-credits {
     text-align: right;
     color: white
