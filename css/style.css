@@ -236,7 +236,7 @@ footer {
     font-family: "Black Ops one";
 }
 #footer-support {
-    display: flex; 
+    display: inline; 
     justify-content: space-evenly;
 }
 #footer-credits {
