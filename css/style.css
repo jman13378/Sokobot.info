@@ -87,6 +87,8 @@ nav {
     border: solid #7289da 5px;
     max-width: -webkit-fill-available;
     max-height: 400px;
+    height: auto;
+    width: auto;
 }
 
 #botname-main-1 {
@@ -473,6 +475,7 @@ color: sas;
     height: 130px; 
     width: 140px
 }
+
 #socials-minigrid-header {
     background-color: #23272a;
     border-radius: 10px;
