@@ -1,9 +1,5 @@
 function getDiscordURL() {
-  console.log(getJSONFile()[0])
+  console.log(getJSONFile().discordurl)
 }
 
-function getJSONFile() {
-  $.getJSON("./config.json", function(json) {
-   return json
-});
-}
+function getJSONFile() {$.getJSON("./config.json", function(json) {return json});}
