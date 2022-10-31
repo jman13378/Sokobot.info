@@ -16,12 +16,17 @@ function moveToMobile() {
     let navtext = document.getElementById('navtext');
     let closebutton = document.getElementById('closeButton');
     let hamburguer = document.getElementById('hamburguer');
+    let mainbuttonss = document.getElementById('main-buttonss');
     let logomain = document.getElementById('logo-main-1');
     let author = document.getElementById('creper92yt')
     let mainbuttons = document.getElementById('main-buttons');
     let mainbutton2 = document.getElementById('main-button-2')
     let info = document.getElementById('main-info-1');
     let info2 = document.getElementById('main-info-2');
+
+    
+    let footersupport = document.getElementById('footer-support');
+    footersupport.style.display = "grid";
 
     nav.style.padding = "50px 0 50px";
     navdiv.style.justifyContent = "none";
@@ -35,7 +40,7 @@ function moveToMobile() {
     logomainheight = Math.round(logomainheight)
 
     logomain.style.height = logomainheight + "px"
-
+    mainbuttonss.style.display = "grid";
     mainbuttons.style.display = "grid";
     mainbutton2.style.marginTop = "20px";
 }

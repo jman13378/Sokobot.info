@@ -18,6 +18,7 @@ function moveToMobile() {
     let author = document.getElementById('creper92yt')
     let mainbuttons = document.getElementById('main-buttons');
     let mainbutton2 = document.getElementById('main-button-2')
+    let mainbuttonss = document.getElementById('main-buttonss');
 
     let memberimg1 = document.getElementById('developers-img1');
     let memberimg2 = document.getElementById('developers-img2');
@@ -32,7 +33,10 @@ function moveToMobile() {
     let developersgrade2 = document.getElementById('developers-grade2')
     let developersgrade3 = document.getElementById('developers-grade3')
 
-
+    
+    let footersupport = document.getElementById('footer-support');
+    footersupport.style.display = "grid";
+    
     nav.style.padding = "50px 0 50px";
     navdiv.style.justifyContent = "none";
     navdiv.style.display = "grid";
@@ -46,6 +50,7 @@ function moveToMobile() {
 
     logomain.style.height = logomainheight + "px"
 
+    mainbuttonss.style.display = "grid";
     mainbuttons.style.display = "grid";
     mainbutton2.style.marginTop = "20px";
 
