@@ -38,7 +38,6 @@ function moveToMobile() {
 
     logomainheight = Math.round(logomainheight)
 
-    logomain.style.height = logomainheight + "px"
 
     
 
