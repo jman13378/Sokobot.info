@@ -56,7 +56,7 @@
         publicity = "false";
       }
       if (title.length == 0) {
-        window.alert("Please provide a Game Title");
+        window.alert("Please provide a Game Title!");
         return;
       }
 
@@ -72,6 +72,9 @@
         } else {
           map[i] = "E";
         }
+      }
+      if (boxes == 0 || destinations == 0) {
+        window.alert("Please create destinations and boxes!")
       }
       if (boxes == destinations) {
         navigator.clipboard.writeText(
