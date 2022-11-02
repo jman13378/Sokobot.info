@@ -1,27 +1,33 @@
 <html>
   <head>
     <script>
-      function SaveChanges() {}
+      function SaveChanges() {
+        var color = document.getElementsByName("color");
+        for (i = 0; i < color.length; i++) {
+          if (ele[i].checked)
+            setCookie("theme", ele[i].value, 7)
+        }
+      }
+
       function setCookie(name, value, days) {
         var exires = "";
         if (days) {
           var date = new Date();
-          date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+          date.setTime(date.getTime() + days * 365 * 24 * 60 * 60);
           expires = "; expires=" + date.toUTCString();
         }
-        document.cookie = name + "=" + (value || "") + expires + "; Path=/";
+        document.cookie = name + "=" + (value || "") + expires + "; Path=/; domain=sokobot.info";
       }
       window.onload = function load() {
         if (getCookie("theme") == null) {
           console.log("lol");
-          setCookie("theme", "light", 7);
+          setCookie("theme", "dark", 7);
+          document.getElementById(getCookie("theme")).checked = true;
         } else {
           console.log(getCookie("theme"));
           document.getElementById(getCookie("theme")).checked = true;
         }
-      }
-
-
+      };
 
       function getCookie(name) {
         var NameEQ = name + "=";
@@ -42,7 +48,6 @@
     </script>
   </head>
   <body>
-    <button onclick="load()">sss</button>
     <svg
       viewbox="0,0,100,100"
       style="filter: drop-shadow(2px 4px 6px black); position: absolute"
@@ -60,22 +65,28 @@
       <label>Dark/Light</label>
       <br />
       <label
-        ><input type="radio" name="lol" value="dark" id="dark" />DARK</label
-      >
-      <label
-        ><input type="radio" name="lol" value="light" id="light" /> LIGHT</label
-      >
+        ><input 
+          type="radio"
+          name="color"
+          value="dark"
+          id="dark"
+        />DARK</label>
       <label
         ><input
-          aria-selected="true"
           type="radio"
-          name="lol"
+          name="color"
+          value="light"
+          id="light"
+        />LIGHT</label>
+      <label
+        ><input
+          type="radio"
+          name="color"
           value="custom"
           id="custom"
-        />CUSTOM</label
-      >
+        />CUSTOM</label>
       <br />
-      <input type="submit" value="Save Changes" />
+      <input type="submit" value="Save Changes" onclick="SaveChanges()" />
     </form>
   </body>
 </html>
