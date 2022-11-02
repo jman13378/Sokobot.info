@@ -30,14 +30,12 @@
       function getCookie(name) {
         var NameEQ = name + "=";
         var ca = document.cookie.split(';');
-        onsole.log("lo1ls")
         for (var i=0;i<ca.length;i++) {
           var c = ca[i];
           while (c.charAt(0)==' ') c = c.substring(1,c.length);
           console.log("lo1l")
           if (c.indexOf(NameEQ)==0) return c.substring(NameEQ.length,c.length)
         }
-        onsole.log("lssso1l")
         return null
       }
       function eraseCookie(name) {
