@@ -11,7 +11,7 @@
         }
         document.cookie = name + "=" + (value || "") + expires + "; Path=/";
       }
-      document.onload = function load() {
+      window.onload = function load() {
         if (getCookie("theme") == null) {
           console.log("lol");
           setCookie("theme", "light", 7);
