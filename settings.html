@@ -16,9 +16,8 @@
           console.log("lol");
           setCookie("theme", "light", 7);
         } else {
-          console.lol(getCookie('theme'))
+          console.lol(getCookie("theme"));
           document.getElementById(getCookie("theme")).checked = true;
-          
         }
       }
 
@@ -65,7 +64,8 @@
         ><input type="radio" name="lol" value="light" id="light" /> LIGHT</label
       >
       <label
-        ><input aria-selected="true"
+        ><input
+          aria-selected="true"
           type="radio"
           name="lol"
           value="custom"
