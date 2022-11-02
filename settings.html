@@ -18,12 +18,8 @@
         if (getCookie('theme')==null) {
           console.log("lol")
           setCookie('theme','light',7);
-        } else if (getCookie('theme')== "light") {
-          document.getElementsByName("lol").forEach(note => {
-            if (note.value == "light") {
-              note.value = true;
-            }
-          });
+        } else{
+          document.getElementById(getCookie('theme')).value = true;
         }
       }
       
@@ -65,9 +61,9 @@
     <form style="position: absolute">
       <label>Dark/Light</label>
       <br>
-      <label><input type="radio" name="lol" value="dark"/>DARK</label>
-      <label><input type="radio" name="lol" value="light"/>LIGHT</label>
-      <label><input type="radio" name="lol" value="custom"/>CUSTOM</label>
+      <label><input type="radio" name="lol" value="dark" id="dark"/>DARK</label>
+      <label><input type="radio" name="lol" value="light" id="light"/>LIGHT</label>
+      <label><input type="radio" name="lol" value="custom" id="custom"/>CUSTOM</label>
       <br>
       <input type="submit" value="Save Changes">
     </form>
