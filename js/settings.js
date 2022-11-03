@@ -1,14 +1,7 @@
-if (getCookie("theme") == null) {
-  console.log("lol");
-  setCookie("theme", "dark", 7);
-  document.getElementsByTagName("html")[0].style.backgroundColor = "#2c2f33";
-} else {
-  if (getCookie("theme") == "dark") {
-    document.getElementsByTagName("html")[0].style.backgroundColor = "#2c2f33";
-  } else if (getCookie("theme") == "light") {
-    document.getElementsByTagName("html")[0].style.backgroundColor = "#2c2f33";
-  } else if (getCookie("theme") == "custom") {
-    document.getElementsByTagName("html")[0].style.backgroundColor = "#2c2f33";
+function SaveChanges() {
+  var color = document.getElementsByName("color");
+  for (i = 0; i < color.length; i++) {
+    if (ele[i].checked) setCookie("theme", ele[i].value, 7);
   }
 }
 
@@ -23,6 +16,15 @@ function setCookie(name, value, days) {
     name + "=" + (value || "") + expires + "domain=.sokobot.info; Path=/";
 }
 
+if (getCookie("theme") == null) {
+  console.log("lol");
+  setCookie("theme", "dark", 7);
+  document.getElementById(getCookie("theme")).checked = true;
+} else {
+  console.log(getCookie("theme"));
+  document.getElementById(getCookie("theme")).checked = true;
+}
+
 function getCookie(name) {
   var NameEQ = name + "=";
   var ca = document.cookie.split(";");
@@ -33,4 +35,7 @@ function getCookie(name) {
     if (c.indexOf(NameEQ) == 0) return c.substring(NameEQ.length, c.length);
   }
   return null;
+}
+function eraseCookie(name) {
+  document.cookie = name + "=; Path=/ Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
 }
