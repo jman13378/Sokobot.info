@@ -3,8 +3,7 @@ function handleCredentialResponse(response) {
 }
 window.onload = function () {
   google.accounts.id.initialize({
-    client_id:
-      "687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com",
+    client_id: "687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com",
     callback: handleCredentialResponse,
   });
   google.accounts.id.renderButton(
@@ -12,4 +11,8 @@ window.onload = function () {
     { theme: "outline", size: "large" } // customization attributes
   );
   google.accounts.id.prompt(); // also display the One Tap dialog
+
+
+    document.getElementById('navtext-div').appendChild('<div class="buttonDiv" id="navtext" ></div>')
+
 };
