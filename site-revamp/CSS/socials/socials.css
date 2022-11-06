@@ -1,0 +1,54 @@
+.socials-grid {
+    color: sas;
+    justify-content: space-around;
+    display: flex;
+}
+
+.socials-minigrid {
+    background-color: #23272a;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    margin-top: 10px;
+
+}
+
+.socials-name {
+    color: white;
+    font-family: "Aldrich";
+    font-weight: 500
+}
+
+.socials-desc {
+    color: #99aab5;
+    font-family: "Aldrich";
+}
+
+.socials-icon {
+    border-radius: 1000px;
+    margin: 30px 10% 0 auto;
+    display: block;
+    border: solid #7289da 5px;
+    max-width: -webkit-fill-available;
+    max-height: 400px;
+    height: 130px; 
+    width: 140px
+}
+
+.socials-minigrid-header {
+    background-color: #23272a;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    margin-top: 10px;
+}
+
+.socials-name-header {
+    color: white;
+    font-family: "Aldrich";
+    font-weight: 500;
+    font-size: xx-large
+}
+
+.socials-social {
+    height: 128px; 
+    width: 128px
+}

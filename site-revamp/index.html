@@ -2,24 +2,9 @@
 
 <head>
   <!--      CSS       -->
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <script>
-    function handleCredentialResponse(response) {
-      console.log("Encoded JWT ID token: " + response.credential);
-    }
-    window.onload = function () {
-      google.accounts.id.initialize({
-        client_id: "687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com",
-        callback: handleCredentialResponse
-      });
-      google.accounts.id.renderButton(
-        document.getElementById("buttonDiv"),
-        { theme: "outline", size: "large" }  // customization attributes
-      );
-      google.accounts.id.prompt(); // also display the One Tap dialog
-    }
-</script>
-  <link href="css/style.css" rel="stylesheet" />
+
+  <link href="CSS/index/index.css" rel="stylesheet" />
+  <link href="CSS/general/general.css" rel="stylesheet" />
   <script
     async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6609271620198718"
@@ -36,7 +21,7 @@
   />
   <meta name="keywords" content="sokobot,jonathan_nathan" />
   <meta name="author" content="Jonathan" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0" />
   <meta property="og:title" content="Sokobot" />
   <meta
     property="og:description"
@@ -49,85 +34,31 @@
   />
   <link
     rel="icon"
-    href="https://github.com/jman13378/Sokobot.info/blob/main/img/logo.jpg"
+    href="../img/logo.jpg"
     type="image/jpg"
   />
 </head>
 
-<nav id="nav">
-  
-  <div id="navtext-div">
-    
-    <a href="developers.html" id="navtext">Developers</a>
+<nav class="nav">
+  <img style="position: absolute;" top="1" src="../img/logo.jpg" class="logo-main-nav">
 
-    <a id="navtext">Home</a>
-
-    <a href="commands.html" id="navtext">Commands</a>
-
-    <a href="socials.html" id="navtext">Socials</a>
-    <a href="custommaps.html" id="navtext">Custom Maps</a>
-    <div id="buttonDiv" id="navtext"></div> 
+  <div class="navtext-div">
+    <a href="developers.html" class="navtext">SOKOBOT</a>
+    <a href="socials.html" class="navtext">COMMANDS</a>
+    <a href="custommaps.html" class="navtext">CUSTOM MAPS</a>
   </div>
 </nav>
 
 <body>
-  <img id="logo-main-1" src="img/logo.jpg" style="height: auto; width: 128px" />
 
-  <p id="botname-main-1">Sokobot</p>
-  <!--<button onclick="getDiscordURL()">1</button>-->
-  <div id="main-buttons">
-    <a href="/index#intro"><button id="main-button-1">Know More</button></a>
-
-    <a href="http://invite.sokobot.info"
-      ><button id="main-button-2">Invite Me!</button></a
-    >
-  </div>
-  <!--<div style="position: fixed; width: 100%; left: 40%; right: 30%;">
-    <object data="settings.html" width="20%" height="50%"style="border-radius: 30%;"></object>
-  </div>-->
-  <div style="margin: 50px 0 50px 0"></div>
-  <!--Spacer-->
-
-  <div id="main-info">
-    <br id="intro" />
-
-    <p id="main-info-1">
-      Sokobot is a Discord bot written with
-      <u><a id="link" href="https://github.com/DV8FromTheWorld/JDA">JDA</a></u>
-      that lets you play
-      <u
-        ><a href="https://en.wikipedia.org/wiki/Sokoban" id="link"
-          >SokoBan</a
-        ></u
-      >. originally made by polymars hosted and modified by me
-    </p>
-
-    <p id="main-info-2">
-      My prefix is ! and it can be changed - Vote us at
-      <u
-        ><a herf="https://top.gg/bot/976976982908747786/vote" id="link"
-          >Top.gg</a
-        ></u
-      >
-    </p>
-    <br />
-  </div>
-  <div id="main-buttonss" style="margin-top: 200px">
-    <a href=""
-      ><button id="main-button-2-1-discord">Join support server</button></a
-    >
-    <a href="https://reddit.com/r/Sokobot"
-      ><button id="main-button-2-1-reddit">Join the subreddit</button></a
-    >
-  </div>
 </body>
 
 <footer>
-  <p id="footer-copyright">©️2022 All rights reserved.</p>
+  <p class="footer-copyright">©️2022 All rights reserved.</p>
 
-  <h2 align="center" id="contacts">Links</h2>
-  <p id="line-break"></p>
-  <div id="footer-support" style="display: inline">
+  <h2 align="center" class="contacts">Links</h2>
+  <p class="line-break"></p>
+  <div class="footer-support" style="display: inline">
     <span
       class="footer-contact"
       style="background-color: #ea4335; color: white"
@@ -225,8 +156,6 @@
       >
     </span>
   </div>
-  <p id="line-break"></p>
-  <p id="footer-credits">&#8883; Created by Jonathan_Nathan</p>
+  <p class="line-break"></p>
+  <p class="footer-credits">&#8883; Created by Jonathan_Nathan</p>
 </footer>
-
-<script src="js/script.js"></script>

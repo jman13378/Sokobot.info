@@ -1,0 +1,35 @@
+.commands-grid {
+  color: sas;
+}
+
+.commands-minigrid {
+  background-color: #23272a;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+  margin-top: 10px;
+}
+
+.commands-name {
+  color: white;
+  font-family: "Aldrich";
+  font-weight: 500;
+}
+
+.commands-desc {
+  color: #99aab5;
+  font-family: "Aldrich";
+}
+
+.commands-minigrid-header {
+  background-color: #23272a;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+  margin-top: 10px;
+}
+
+.commands-name-header {
+  color: white;
+  font-family: "Aldrich";
+  font-weight: 500;
+  font-size: xx-large;
+}
