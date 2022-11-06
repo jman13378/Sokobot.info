@@ -2,23 +2,7 @@
 
 <head>
   <!--      CSS       -->
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <script>
-    function handleCredentialResponse(response) {
-      console.log("Encoded JWT ID token: " + response.credential);
-    }
-    window.onload = function () {
-      google.accounts.id.initialize({
-        client_id: "687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com",
-        callback: handleCredentialResponse
-      });
-      google.accounts.id.renderButton(
-        document.getElementById("buttonDiv"),
-        { theme: "outline", size: "large" }  // customization attributes
-      );
-      google.accounts.id.prompt(); // also display the One Tap dialog
-    }
-</script>
+
   <link href="css/style.css" rel="stylesheet" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6609271620198718"
   crossorigin="anonymous"></script>
@@ -63,7 +47,7 @@
 
     <a href="socials.html" id="navtext">Socials</a>
     <a href="custommaps.html" id="navtext">Custom Maps</a>
-    <div id="buttonDiv" id="navtext"></div> 
+    <a href="https://auth.magic.link/v1/oauth2/uh-CHWRIgUk0cRer17g6OZaFOfgHOvm2L1waFlRcYys=/callback" id="navtext"></a> 
   </div>
 </nav>
 
