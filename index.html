@@ -8,7 +8,7 @@
   />
 
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 
   <link href="css/style.css" rel="stylesheet" />
   <script
@@ -55,16 +55,8 @@
 
     <a href="socials.html" id="navtext">Socials</a>
     <a href="custommaps.html" id="navtext">Custom Maps</a>
-    
-    <div id="btn-login" class="g-signin2" data-onsuccess="onSignIn"></div>
-    <a
-      id="btn-logout"
-      style="float: right"
-      href="#"
-      hidden=""
-      onclick="signOut();"
-      >Sign out</a
-    >
+
+    <div id="buttonDiv navtext" ></div> 
   </div>
 </nav>
 
