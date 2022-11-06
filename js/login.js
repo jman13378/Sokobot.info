@@ -7,7 +7,7 @@ window.onload = function () {
     callback: handleCredentialResponse,
   });
   google.accounts.id.renderButton(
-    document.getElementById("buttonDiv"),
+    document.getElementsByClassName("buttonDiv")[0],
     { theme: "outline", size: "large" } // customization attributes
   );
   google.accounts.id.prompt(); // also display the One Tap dialog
