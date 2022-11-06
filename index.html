@@ -46,20 +46,24 @@
     <a href="custommaps.html" id="navtext">Custom Maps</a>
 
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <div id="g_id_onload"
-       data-client_id="687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com"
-       data-login_uri="https://sokobot.info/"
-       data-auto_prompt="false"
-       data-skip_prompt_cookie="g_login">
-    </div>
-    <div class="g_id_signin"
-       data-type="standard"
-       data-size="large"
-       data-theme="outline"
-       data-text="sign_in_with"
-       data-shape="rectangular"
-       data-logo_alignment="left">
-    </div>
+    <div
+      id="g_id_onload"
+      data-client_id="687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com"
+      data-context="signin"
+      data-ux_mode="popup"
+      data-login_uri="https://sokobot.info/account/login"
+      data-itp_support="true"
+    ></div>
+
+    <div
+      class="g_id_signin"
+      data-type="standard"
+      data-shape="pill"
+      data-theme="filled_blue"
+      data-text="continue_with"
+      data-size="large"
+      data-logo_alignment="left"
+    ></div>
   </div>
 </nav>
 
