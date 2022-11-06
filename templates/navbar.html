@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"> </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<body>
+    <br>
+    <div id="btn-login" class="g-signin2" data-onsuccess="onSignIn"></div>
+    <a id="btn-logout" style="float:right;" href="#" hidden onclick="signOut();">Sign out</a>
+    <br />
+    <div id="data"></div>
+    <br /><br /><br /><br />
+
+    <script>
+        var profile = null;
+    </script>
+</body>
+
+</html>
