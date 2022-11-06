@@ -49,13 +49,46 @@
     <a href="socials.html" id="navtext">Socials</a>
     <a href="custommaps.html" id="navtext">Custom Maps</a>
     
-    <div class="buttonDiv" id="navtext" ></div> 
-  </div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script>
+      function handleCredentialResponse(response) {
+        console.log("Encoded JWT ID token: " + response.credential);
+      }
+      window.onload = function () {
+        google.accounts.id.initialize({
+          client_id: "YOUR_GOOGLE_CLIENT_ID",
+          callback: handleCredentialResponse
+        });
+        google.accounts.id.renderButton(
+          document.getElementById("buttonDiv"),
+          { theme: "outline", size: "large" }  // customization attributes
+        );
+        google.accounts.id.prompt(); // also display the One Tap dialog
+      }
+  </script>
+  <div id="buttonDiv"></div>   </div>
 </nav>
 
 <body>
+  
   <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <script src="js/login.js"></script>
+  <script>
+    function handleCredentialResponse(response) {
+      console.log("Encoded JWT ID token: " + response.credential);
+    }
+    window.onload = function () {
+      google.accounts.id.initialize({
+        client_id: "YOUR_GOOGLE_CLIENT_ID",
+        callback: handleCredentialResponse
+      });
+      google.accounts.id.renderButton(
+        document.getElementById("buttonDiv"),
+        { theme: "outline", size: "large" }  // customization attributes
+      );
+      google.accounts.id.prompt(); // also display the One Tap dialog
+    }
+</script>
+<div id="buttonDiv"></div> 
   <img id="logo-main-1" src="img/logo.jpg" style="height: auto; width: 128px" />
 
   <p id="botname-main-1">Sokobot</p>

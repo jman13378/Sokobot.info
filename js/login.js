@@ -12,7 +12,4 @@ window.onload = function () {
   );
   google.accounts.id.prompt(); // also display the One Tap dialog
 
-
-    document.getElementById('navtext-div').appendChild('<div class="buttonDiv" id="navtext" ></div>')
-
 };
