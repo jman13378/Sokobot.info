@@ -20,7 +20,7 @@ html {
     background-color: #2c2f33;
     user-select: none;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 #line-break {

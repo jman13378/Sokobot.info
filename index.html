@@ -13,7 +13,7 @@
   <!--<script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/script4.js"></script>-->
   <title>Sokobot - Home</title>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <meta
     name="description"
     content="A discord bot made with JDA, allows the user to play SokoBan"
@@ -31,11 +31,7 @@
     property="og:image"
     content="https://github.com/jman13378/Sokobot.info/blob/main/img/logo.jpg"
   />
-  <link
-    rel="icon"
-    href="img/logo.jpg"
-    type="image/jpg"
-  />
+  <link rel="icon" href="img/logo.jpg" type="image/jpg" />
 </head>
 
 <nav id="nav">
@@ -48,25 +44,35 @@
 
     <a href="socials.html" id="navtext">Socials</a>
     <a href="custommaps.html" id="navtext">Custom Maps</a>
-    
+
+    <div class="g_id_signout">Sign Out</div>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script>
+      const button = document.getElementById("signout_button");
+      button.onclick = () => {
+        google.accounts.id.disableAutoSelect();
+      };
       function handleCredentialResponse(response) {
-        console.log("Encoded JWT ID token: " + response.credential);
+        var signout = document.getElementsByClassName("g_id_signout")[0];
+        var signin = document.getElementById("buttonDiv");
+        signin.style.display = none;
+        signout.style.display = block;
       }
       window.onload = function () {
         google.accounts.id.initialize({
-          client_id: "687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com",
-          callback: handleCredentialResponse
+          client_id:
+            "687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com",
+          callback: handleCredentialResponse,
         });
         google.accounts.id.renderButton(
           document.getElementById("buttonDiv"),
-          { theme: "outline", size: "large" }  // customization attributes
+          { theme: "outline", size: "large" } // customization attributes
         );
         google.accounts.id.prompt(); // also display the One Tap dialog
-      }
-  </script>
-  <div id="buttonDiv"></div>   </div>
+      };
+    </script>
+    <div id="buttonDiv"></div>
+  </div>
 </nav>
 
 <body>
@@ -119,7 +125,6 @@
       ><button id="main-button-2-1-reddit">Join the subreddit</button></a
     >
   </div>
-  
 </body>
 
 <footer>
