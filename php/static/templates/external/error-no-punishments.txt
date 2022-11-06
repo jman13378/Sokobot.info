@@ -1,9 +1,0 @@
-<tr>
-	<td>-</td>
-	<td>{{ error_no_punishments }}</td>
-	<td>-</td>
-	<td>-</td>
-	<td>-</td>
-	<td>-</td>
-	<td class="text-right">-</td>
-</tr>
