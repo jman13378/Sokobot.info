@@ -2,10 +2,12 @@
 
 <head>
   <!--      CSS       -->
-  <meta name="google-signin-client_id" content="687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com" />
+  <meta
+    name="google-signin-client_id"
+    content="687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com"
+  />
 
-  
-  <script src="https://code.jquery.com/jquery-3.5.1.js"> </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
 
   <link href="css/style.css" rel="stylesheet" />
@@ -53,6 +55,16 @@
 
     <a href="socials.html" id="navtext">Socials</a>
     <a href="custommaps.html" id="navtext">Custom Maps</a>
+    
+    <div id="btn-login" class="g-signin2" data-onsuccess="onSignIn"></div>
+    <a
+      id="btn-logout"
+      style="float: right"
+      href="#"
+      hidden=""
+      onclick="signOut();"
+      >Sign out</a
+    >
   </div>
 </nav>
 
@@ -106,16 +118,6 @@
       ><button id="main-button-2-1-reddit">Join the subreddit</button></a
     >
   </div>
-  <br>
-  <div id="btn-login" class="g-signin2" data-onsuccess="onSignIn"></div>
-  <a id="btn-logout" style="float:right;" href="#" hidden onclick="signOut();">Sign out</a>
-  <br />
-  <div id="data"></div>
-  <br /><br /><br /><br />
-
-  <script>
-      var profile = null;
-  </script>
   <script src="js/login.js"></script>
 </body>
 
