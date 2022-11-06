@@ -45,18 +45,28 @@
     <a href="socials.html" id="navtext">Socials</a>
     <a href="custommaps.html" id="navtext">Custom Maps</a>
 
-    <div class="g_id_signout">Sign Out</div>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script>
-      const button = document.getElementById("signout_button");
-      button.onclick = () => {
-        google.accounts.id.disableAutoSelect();
-      };
+      function getCookie(name) {
+        var NameEQ = name + "=";
+        var ca = document.cookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == " ") c = c.substring(1, c.length);
+          console.log("lo1l");
+          if (c.indexOf(NameEQ) == 0)
+            return c.substring(NameEQ.length, c.length);
+        }
+        return null;
+      }
+      function googleloginbutton() {
+        if (getCookie("g_state") == {"i_l":0}) {
+
+        }
+      }
+
       function handleCredentialResponse(response) {
-        var signout = document.getElementsByClassName("g_id_signout")[0];
-        var signin = document.getElementById("buttonDiv");
-        signin.style.display = none;
-        signout.style.display = block;
+        googleloginbutton();
       }
       window.onload = function () {
         google.accounts.id.initialize({
