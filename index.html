@@ -46,45 +46,20 @@
     <a href="custommaps.html" id="navtext">Custom Maps</a>
 
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script>
-      function getCookie(name) {
-        var NameEQ = name + "=";
-        var ca = document.cookie.split(";");
-        for (var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == " ") c = c.substring(1, c.length);
-          console.log("lo1l");
-          if (c.indexOf(NameEQ) == 0)
-            return c.substring(NameEQ.length, c.length);
-        }
-        return null;
-      }
-      function googleLogInButton() {
-        if (getCookie("g_state") == '{"i_l":0}') {
-          var sign_in = document.getElementById('buttonDiv');
-          sign_in.style.display = none;
-        }
-      }
-
-      function handleCredentialResponse(response) {
-        googleLogInButton();
-      }
-      window.onload = function () {
-        
-        google.accounts.id.initialize({
-          client_id:
-            "687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com",
-          callback: handleCredentialResponse,
-        });
-        google.accounts.id.renderButton(
-          document.getElementById("buttonDiv"),
-          { theme: "outline", size: "large" } // customization attributes
-        );
-        google.accounts.id.prompt(); // also display the One Tap dialog
-        googleLogInButton();
-      };
-    </script>
-    <div id="buttonDiv"></div>
+    <div id="g_id_onload"
+       data-client_id="687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com"
+       data-login_uri="https://sokobot.info/"
+       data-auto_prompt="false"
+       data-skip_prompt_cookie="g_login">
+    </div>
+    <div class="g_id_signin"
+       data-type="standard"
+       data-size="large"
+       data-theme="outline"
+       data-text="sign_in_with"
+       data-shape="rectangular"
+       data-logo_alignment="left">
+    </div>
   </div>
 </nav>
 
