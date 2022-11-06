@@ -59,16 +59,18 @@
         }
         return null;
       }
-      function googleloginbutton() {
-        if (getCookie("g_state") == {"i_l":0}) {
-
+      function googleLogInButton() {
+        if (getCookie("g_state") == '{"i_l":0}') {
+          var sign_in = document.getElementById('buttonDiv');
+          sign_in.style.display = none;
         }
       }
 
       function handleCredentialResponse(response) {
-        googleloginbutton();
+        googleLogInButton();
       }
       window.onload = function () {
+        
         google.accounts.id.initialize({
           client_id:
             "687671619687-0rl7re58epguj7hrhi2pqimvegi06ika.apps.googleusercontent.com",
@@ -79,6 +81,7 @@
           { theme: "outline", size: "large" } // customization attributes
         );
         google.accounts.id.prompt(); // also display the One Tap dialog
+        googleLogInButton();
       };
     </script>
     <div id="buttonDiv"></div>
