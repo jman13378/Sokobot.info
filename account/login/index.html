@@ -1,10 +1,387 @@
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en"><head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Start the login flow just by including this script tag! -->
-  <script
-    src="https://auth.magic.link/pnp/login"
-    data-magic-publishable-api-key="pk_live_940E75DD2410B337"
-    data-redirect-uri="/account/callback">
-  </script>
+
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="stylesheet" href="https://cdn.auth0.com/ulp/react-components/1.61.5/css/main.cdn.min.css">
+<style id="custom-styles-container">
+
+  
+
+
+
+:root {
+--primary-color: #635dff;
+}
+:root {
+--button-font-color: #ffffff;
+}
+:root {
+--secondary-button-border-color: #c9cace;
+--social-button-border-color: #c9cace;
+--radio-button-border-color: #c9cace;
+}
+:root {
+--secondary-button-text-color: #1e212a;
+}
+:root {
+--link-color: #635dff;
+}
+:root {
+--title-font-color: #1e212a;
+}
+:root {
+--font-default-color: #1e212a;
+}
+:root {
+--widget-background-color: #ffffff;
+}
+:root {
+--box-border-color: #c9cace;
+}
+:root {
+--font-light-color: #65676e;
+}
+:root {
+--input-text-color: #000000;
+}
+:root {
+--input-border-color: #c9cace;
+--border-default-color: #c9cace;
+}
+:root {
+--input-background-color: #ffffff;
+}
+:root {
+--icon-default-color: #65676e;
+}
+:root {
+--error-color: #d03c38;
+--error-text-color: #ffffff;
+}
+:root {
+--success-color: #13a688;
+}
+:root {
+--base-focus-color: #635dff;
+--transparency-focus-color: rgba(99,93,255, 0.15);
+}
+:root {
+--base-hover-color: #000000;
+--transparency-hover-color: rgba(0,0,0, var(--hover-transparency-value));
+}
+
+
+
+@font-face {
+font-family: 'ULP Custom';
+font-style: normal;
+font-weight: var(--font-default-weight);
+src: local('ULP Custom'), url('https://fonts.gstatic.com/s/blackopsone/v20/qWcsB6-ypo7xBdr6Xshe96H3aDvbtw.woff2') format('woff');
+}
+
+body {
+--font-family: 'ULP Custom', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
+}
+html, :root {
+font-size: 16px;
+--default-font-size: 16px;
+}
+body {
+--title-font-size: 1.5rem;
+--title-font-weight: var(--font-default-weight);
+}
+.cb5a6b08f {
+font-size: 0.875rem;
+font-weight: var(--font-default-weight);
+}
+.cd2091297 {
+font-size: 0.875rem;
+font-weight: var(--font-default-weight);
+}
+.c818c634d, .c238f2845 {
+font-size: 1rem;
+font-weight: var(--font-default-weight);
+}
+.c9979fbc6 {
+font-size: 1rem;
+font-weight: var(--font-default-weight);
+}
+.ca478da55, .c4e3bab8a {
+font-size: 0.875rem;
+font-weight: var(--font-bold-weight) !important;
+}
+
+
+
+
+:root {
+--button-border-width: 1px;
+--social-button-border-width: 1px;
+--radio-border-width: 1px;
+}
+body {
+--button-border-radius: 9999px;
+--radio-border-radius: 9999px;
+}
+:root {
+--input-border-width: 3px;
+}
+body {
+--input-border-radius: 10px;
+}
+:root {
+--border-radius-outer: 50px;
+}
+:root {
+--box-border-width: 10px;
+}
+
+
+
+
+
+body {
+--logo-alignment: 0 auto 0 0;
+}
+
+
+.cd2f0f7de {
+content: url('https://cdn.discordapp.com/avatars/976976982908747786/85a08789d90089b09491ddea7d38ece1.png?size=4096');
+}
+
+body {
+--logo-height: 64px;
+}
+.cd2f0f7de {
+height: var(--logo-height);
+}
+
+
+body {
+--header-alignment: center;
+}
+
+.c66a28951 {
+display: flex;
+flex-direction: column;
+}
+.c66a28951 form {
+order: 3;
+}
+.c66a28951 ._alternate-action {
+order: 4
+}
+.c66a28951 > .c100bc44b {
+order: 2;
+margin-bottom: 24px;
+}
+.c66a28951 .cdb8c835a {
+order: 1;
+margin-top: 0;
+}
+
+
+
+.c9ef2d9c6 {
+--page-background-alignment: center;
+}
+body {
+--page-background-color: #000000;
+}
+.c9ef2d9c6 {
+--page-background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.meishesdk.com%2Fen%2Fcloudedit%2F&psig=AOvVaw2HwEFoA7NWSDQBTzRIYM0-&ust=1667868576503000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLjByOHsmvsCFQAAAAAdAAAAABAE);
+}
+
+
+
+
+
+</style>
+<style>
+/* By default, hide features for javascript-disabled browsing */
+/* We use !important to override any css with higher specificity */
+/* It is also overriden by the styles in <noscript> in the header file */
+.no-js {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+</style>
+<noscript>
+<style>
+  /* We use !important to override the default for js enabled */
+  /* If the display should be other than block, it should be defined specifically here */
+  .js-required { display: none !important; }
+  .no-js {
+    clip: auto;
+    clip-path: none;
+    height: auto;
+    overflow: auto;
+    position: static;
+    white-space: normal;
+    width: var(--prompt-width);
+  }
+</style>
+</noscript>
+
+<title>Log in | All Applications</title>
 </head>
+
+<body>
+<div class="c7aedd67e c9ef2d9c6">
+
+<main class="ca27b28ab login-id">
+<section class="c816e925e _prompt-box-outer">
+<div class="c41b10a9e c5d6300a1">
+
+
+<div class="c37260841">
+  <header class="c2c29ceb3 c139ffaaf">
+    <div title="Sokobot" id="custom-prompt-logo" style="width: auto !important; height: 60px !important; position: static !important; margin: auto !important; padding: 0 !important; background-color: transparent !important; background-position: center !important; background-size: contain !important; background-repeat: no-repeat !important"></div>
+  
+    <img class="cd2f0f7de c5a27fb77" id="prompt-logo-center" src="https://cdn.discordapp.com/avatars/976976982908747786/85a08789d90089b09491ddea7d38ece1.png?size=4096" alt="Sokobot">
+  
+    
+      <h1 class="cd3917b83 c407707d5">Welcome</h1>
+    
+  
+    <div class="cb5a6b08f c1d3f4bc2">
+      <p class="ce4f59f1a cc6b3a688">Log in to Sokobot to continue to All Applications.</p>
+    </div>
+  </header>
+
+  <div class="cd2091297 c66a28951">
+    
+  
+    
+      <form method="POST" class="c343a2ca4 _form-login-id">
+        <input type="hidden" name="state" value="hKFo2SBtSXN4RHdpNTZPdVc5bDVlR1o0dWRFcmU1eG92azBzV6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGE3emY0ZkFaZlN6VVJ6LWFaT3FMei1ycGZvaWo0TFR5o2NpZNkgWTZtWmdnWlp2WnYzRHdCMWtQOHRmbjNnWWRBTU11ek0">
+      
+        <div class="cba60bef7 c53a5eb2b">
+          <div class="c9efff739">
+            <div class="input-wrapper _input-wrapper">
+              <div class="cbcea83ac c5423646e text c66270906 ca3e6a9e0 cad4c15e4" data-action-text="" data-alternate-action-text="">
+                <label class="c9979fbc6 no-js c91b200d0 ce93d0340" for="username">
+                  Email address
+                </label>
+              
+                <input class="input c15373613 c2a5f955d" inputmode="email" name="username" id="username" type="text" value="" required="" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus="" data-autofilled="">
+              
+                <div class="c9979fbc6 js-required c91b200d0 ce93d0340" data-dynamic-label-for="username" aria-hidden="true">
+                  Email address
+                </div>
+              </div>
+            
+              
+            </div>
+          
+            
+          </div>
+        </div>
+      
+        <input class="hide" type="password" autocomplete="off" tabindex="-1" aria-hidden="true">
+      
+        <input type="hidden" id="js-available" name="js-available" value="true">
+      
+        <input type="hidden" id="webauthn-available" name="webauthn-available" value="true">
+      
+        <input type="hidden" id="is-brave" name="is-brave" value="false">
+      
+        <input type="hidden" id="webauthn-platform-available" name="webauthn-platform-available" value="true">
+      
+        <div class="c93926433">
+          
+            <button type="submit" name="action" value="default" class="c818c634d cab70d39b c9fec752d c570086c6 _button-login-id">Continue</button>
+          
+        </div>
+      </form>
+    
+  
+    
+      <div class="ulp-alternate-action  _alternate-action __s16nu9">
+        <p class="ce4f59f1a cc6b3a688 c33d58d0a">Don't have an account?
+          <a class="c4e3bab8a cfaa62710" href="/u/signup/identifier?state=hKFo2SBtSXN4RHdpNTZPdVc5bDVlR1o0dWRFcmU1eG92azBzV6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGE3emY0ZkFaZlN6VVJ6LWFaT3FMei1ycGZvaWo0TFR5o2NpZNkgWTZtWmdnWlp2WnYzRHdCMWtQOHRmbjNnWWRBTU11ek0">Sign up</a>
+        </p>
+      </div>
+    
+  
+    
+      <div class="cc952ac40 c100bc44b">
+        <span>Or</span>
+      </div>
+    
+  
+    
+      <div class="c0e3339c3 cdb8c835a">
+        
+          <form method="post" data-provider="google" class="c238f2845 ceedb4379 c136cf8c9">
+            <input type="hidden" name="state" value="hKFo2SBtSXN4RHdpNTZPdVc5bDVlR1o0dWRFcmU1eG92azBzV6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGE3emY0ZkFaZlN6VVJ6LWFaT3FMei1ycGZvaWo0TFR5o2NpZNkgWTZtWmdnWlp2WnYzRHdCMWtQOHRmbjNnWWRBTU11ek0">
+          
+            <input type="hidden" name="connection" value="google-oauth2">
+          
+            <button type="submit" class="c7a6de247 c1f76cffb c40bc9f64" data-provider="google">
+              
+                <span class="ce4d7470b cc64e240b" data-provider="google"></span>
+              
+            
+              <span class="c68957c78">Continue with Google</span>
+            </button>
+          </form>
+        
+          <form method="post" data-provider="github" class="c238f2845 ceedb4379 cbd39ba7e">
+            <input type="hidden" name="state" value="hKFo2SBtSXN4RHdpNTZPdVc5bDVlR1o0dWRFcmU1eG92azBzV6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGE3emY0ZkFaZlN6VVJ6LWFaT3FMei1ycGZvaWo0TFR5o2NpZNkgWTZtWmdnWlp2WnYzRHdCMWtQOHRmbjNnWWRBTU11ek0">
+          
+            <input type="hidden" name="connection" value="github">
+          
+            <button type="submit" class="c7a6de247 c1f76cffb c4262c130" data-provider="github">
+              
+                <span class="ce4d7470b cc64e240b" data-provider="github"></span>
+              
+            
+              <span class="c68957c78">Continue with GitHub</span>
+            </button>
+          </form>
+        
+          <form method="post" data-provider="oauth2" class="c238f2845 ceedb4379 _social-button-container-oauth2">
+            <input type="hidden" name="state" value="hKFo2SBtSXN4RHdpNTZPdVc5bDVlR1o0dWRFcmU1eG92azBzV6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGE3emY0ZkFaZlN6VVJ6LWFaT3FMei1ycGZvaWo0TFR5o2NpZNkgWTZtWmdnWlp2WnYzRHdCMWtQOHRmbjNnWWRBTU11ek0">
+          
+            <input type="hidden" name="connection" value="discord">
+          
+            <button type="submit" class="c7a6de247 c1f76cffb _social-button-oauth2" data-provider="oauth2">
+              
+                <img class="ce4d7470b cc0f26efe" src="https://cdn.auth0.com/marketplace/catalog/content/assets/creators/discord/discord-avatar.png" alt="Connection icon">
+              
+            
+              <span class="c68957c78">Continue with Discord</span>
+            </button>
+          </form>
+        
+      </div>
+    
+  </div>
+</div>
+</div>
+
+
+<a href="https://auth0.com/?utm_source=lock&amp;utm_campaign=badge&amp;utm_medium=widget" target="_blank" rel="noopener noreferrer" class="c77c1ddc7" aria-label="Link to the Auth0 website">
+  <span class="cadab89fd"></span>
+</a>
+
+</section>
+</main>
+<script id="client-scripts" type="text/javascript">
+!function(){var e,v,h,t,n={exports:function(n,a){var r={};function i(e,t,n,r){return e.addEventListener(t,n,r)}function o(e){return"string"==typeof e}function c(e,t){return e.getAttribute(t)}function u(e,t,n){return e.setAttribute(t,n)}return{addClass:function(e,t){if(e.classList)return e.classList.add(t);var n=e.className.split(" ");-1===n.indexOf(t)&&(n.push(t),e.className=n.join(" "))},toggleClass:function(e,t){if(e.classList)return e.classList.toggle(t);var n=e.className.split(" "),r=n.indexOf(t);-1!==r?n.splice(r,1):n.push(t),e.className=n.join(" ")},addClickListener:function(e,t){return i(e,"click",t)},addEventListener:i,getAttribute:c,getElementById:function(e){return a.getElementById(e)},getParent:function(e){return e.parentNode},isString:o,loadScript:function(e){var t=a.createElement("script");t.src=e,t.async=!0,a.body.appendChild(t)},poll:function(e){var i=e.interval||2e3,t=e.url||n.location.href,o=e.condition||function(){return!0},c=e.onSuccess||function(){},u=e.onError||function(){};return setTimeout(function r(){var a=new XMLHttpRequest;return a.open("GET",t),a.setRequestHeader("Accept","application/json"),a.onload=function(){if(200===a.status){var e="application/json"===a.getResponseHeader("Content-Type").split(";")[0]?JSON.parse(a.responseText):a.responseText;return o(e)?c():setTimeout(r,i)}if(429!==a.status)return u({status:a.status,responseText:a.responseText});var t=1e3*Number.parseInt(a.getResponseHeader("X-RateLimit-Reset")),n=t-(new Date).getTime();return setTimeout(r,i<n?n:i)},a.send()},i)},querySelector:function(e,t){return o(e)?a.querySelector(e):e.querySelector(t)},querySelectorAll:function(e,t){var n=o(e)?a.querySelectorAll(e):e.querySelectorAll(t);return Array.prototype.slice.call(n)},removeClass:function(e,t){if(e.classList)return e.classList.remove(t);var n=e.className.split(" "),r=n.indexOf(t);-1!==r&&(n.splice(r,1),e.className=n.join(" "))},setAttribute:u,removeAttribute:function(e,t){return e.removeAttribute(t)},swapAttributes:function(e,t,n){var r=c(e,t),a=c(e,n);u(e,n,r),u(e,t,a)},setGlobalFlag:function(e,t){r[e]=!!t},getGlobalFlag:function(e){return!!r[e]},preventFormSubmit:function(e){e.stopPropagation(),e.preventDefault()},matchMedia:function(e){return"function"!=typeof n.matchMedia&&n.matchMedia(e).matches},dispatchEvent:function(e,t,n){var r;"function"!=typeof Event?(r=a.createEvent("Event")).initCustomEvent(t,n,!1):r=new Event(t,{bubbles:n}),e.dispatchEvent(r)},setTimeout:setTimeout,timeoutPromise:function(e,a){return new Promise(function(t,n){var r=setTimeout(function(){n(new Error("timeoutPromise: promise timed out"))},e);a.then(function(e){clearTimeout(r),t(e)},function(e){clearTimeout(r),n(e)})})}}}}.exports(window,document),r={exports:function(e,t){for(var i="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_",l=new Uint8Array(256),o=0;o<i.length;o++)l[i.charCodeAt(o)]=o;function c(e){var t,n=new Uint8Array(e),r=n.length,a="";for(t=0;t<r;t+=3)a+=i[n[t]>>2],a+=i[(3&n[t])<<4|n[t+1]>>4],a+=i[(15&n[t+1])<<2|n[t+2]>>6],a+=i[63&n[t+2]];return r%3==2?a=a.substring(0,a.length-1):r%3==1&&(a=a.substring(0,a.length-2)),a}function n(){return navigator&&navigator.credentials&&"undefined"!=typeof PublicKeyCredential}return{base64URLEncode:c,base64URLDecode:function(e){var t,n,r,a,i,o=.75*e.length,c=e.length,u=0,s=new Uint8Array(o);for(t=0;t<c;t+=4)n=l[e.charCodeAt(t)],r=l[e.charCodeAt(t+1)],a=l[e.charCodeAt(t+2)],i=l[e.charCodeAt(t+3)],s[u++]=n<<2|r>>4,s[u++]=(15&r)<<4|a>>2,s[u++]=(3&a)<<6|63&i;return s.buffer},publicKeyCredentialToJSON:function e(t){if(t instanceof Array){var n=[];for(o=0;o<t.length;o+=1)n.push(e(t[o]));return n}if(t instanceof ArrayBuffer)return c(t);if(t instanceof Object){var r={};for(var a in t)r[a]=e(t[a]);return r}return t},str2ab:function(e){for(var t=new ArrayBuffer(e.length),n=new Uint8Array(t),r=0,a=e.length;r<a;r++)n[r]=e.charCodeAt(r);return t},isWebAuthnAvailable:n,isWebauthnPlatformAuthenticatorAvailableAsync:function(e){return n()?e(1e3,PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()):Promise.resolve(!1)}}}}.exports(window,document);({exports:function(e,r,a,t){var n=e(".ca27b28ab"),i=e("#alert-trigger"),o=e(".cf416e392"),c=e(".cf6b8dd61"),u=!1;i&&c&&n&&t(n,function(e){var t=e.target===i,n=c.contains(e.target);return t&&!u?(r(o,"show"),void(u=!0)):t&&u||u&&!n?(a(o,"show"),void(u=!1)):void 0})}}).exports(n.querySelector,n.addClass,n.removeClass,n.addClickListener),(v="recaptcha_v2",h="recaptcha_enterprise",(e={}).exports=function(e,a,i,o,c,r){var u,s=a("div[data-recaptcha-sitekey]"),t=a("div[data-recaptcha-sitekey] input"),l=a("#ulp-recaptcha");function f(){return s.getAttribute("data-recaptcha-provider")}function d(e){return t.value=e}function p(e,t){if(e&&e.getBoundingClientRect){if(!r("(max-width: 480px)"))return l.style.transform="",void(l.style.height="");(void 0===t||isNaN(t))&&(t=1.4);var n=72*t;l.style.transform="scale("+t+")",l.style.height=n+"px",l.style.width="10px",s.clientWidth+8<e.getBoundingClientRect().width&&p(e,t-.01)}}s&&(u="recaptchaCallback_"+Math.floor(1000001*Math.random()),window[u]=function(){var e,t,n,r;delete window[u],e=function(e){switch(e){case v:return window.grecaptcha;case h:return window.grecaptcha.enterprise}}(f()),t=e.render(l,{sitekey:s.getAttribute("data-recaptcha-sitekey"),"expired-callback":function(){d(""),i(s,"ce1257dfc"),e.reset(t)},callback:function(e){d(e),o(s,"ce1257dfc")}}),n=function(e){p(e),c(window,"resize",function(){p(e)})},r=setInterval(function(){var e=a("#ulp-recaptcha iframe");if(e)return clearInterval(r),n(e)},200)},e(function(e,t,n){switch(e){case v:return"https://www.recaptcha.net/recaptcha/api.js?hl="+t+"&onload="+n;case h:return"https://www.recaptcha.net/recaptcha/enterprise.js?render=explicit&hl="+t+"&onload="+n}}(f(),s.getAttribute("data-recaptcha-lang"),u)))},e.exports)(n.loadScript,n.querySelector,n.addClass,n.removeClass,n.addEventListener,n.matchMedia),((t={}).exports=function(r,e,a,i,o,c,u,s,n,l){function f(e){var t=e.target,n=c(t);t.value||l(t,"data-autofilled")?i(n,"cad4c15e4"):o(n,"cad4c15e4")}function d(e){var t=e.target;"onAutoFillStart"===e.animationName&&(n(t,"data-autofilled",!0),s(e.target,"change",!0),a(t,"keyup",p,{once:!0}))}function p(e){var t=e.target;n(t,"data-autofilled","")}if(r("body._simple-labels"))return e(".c9979fbc6.no-js").forEach(function(e){o(e,"no-js")}),void e(".c9979fbc6.js-required").forEach(function(e){i(e,"hide")});e(".cbcea83ac:not(.cfdb28445):not(disabled)").forEach(function(e){i(e,"ca3e6a9e0");var t,n=r(e,".input");n.value&&i(e,"cad4c15e4"),a(e,"change",f),a(n,"blur",f),a(n,"animationstart",d),t=n,u(function(){t.value&&s(t,"change",!0)},100)})},t.exports)(n.querySelector,n.querySelectorAll,n.addEventListener,n.addClass,n.removeClass,n.getParent,n.setTimeout,n.dispatchEvent,n.setAttribute,n.getAttribute),{exports:function(e,t,n,r,a,i){function o(e){var t=n("submitted");r("submitted",!0),t?a(e):"apple"===i(e.target,"data-provider")&&setTimeout(function(){r("submitted",!1)},2e3)}var c=e("form");c&&c.forEach(function(e){t(e,"submit",o)})}}.exports(n.querySelectorAll,n.addEventListener,n.getGlobalFlag,n.setGlobalFlag,n.preventFormSubmit,n.getAttribute),{exports:function(t,e,n){var r=t("form._form-detect-browser-capabilities"),a=t("main.login-id");if(r||a){var i=e.isWebAuthnAvailable();t("#webauthn-available").value=i?"true":"false",t("#js-available").value="true",navigator.brave?navigator.brave.isBrave().then(function(e){t("#is-brave").value=e,o()}):o()}function o(){i?e.isWebauthnPlatformAuthenticatorAvailableAsync(n).then(function(e){t("#webauthn-platform-available").value=e?"true":"false",r&&r.submit()}).catch(function(e){t("#webauthn-platform-available").value="false",r&&r.submit()}):(t("#webauthn-platform-available").value="false",r&&r.submit())}}}.exports(n.querySelector,r,n.timeoutPromise)}();
+</script>
+</div>
+
+
+</body></html>
