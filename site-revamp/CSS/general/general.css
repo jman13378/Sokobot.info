@@ -18,7 +18,7 @@ a {
 }
 
 footer {
-    border-top: solid #23272a 5px;
+    border-top: solid #323539 5px;
     margin-top: 20px;
 }
 
@@ -59,10 +59,14 @@ footer {
     font-family: "Black Ops one";
 }
 
+.text {
+    font-family: "Black Ops one";
+
+}
 
 nav {
     background-color: #23272a;
-    padding: 20px 0 20px 0;
+    padding: 5px 0 50px 0;
     margin-bottom: 100px;
     transition: 0.2s;
 }
