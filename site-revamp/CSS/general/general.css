@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+.link {
+    color:blue
+}
 
 html {
     background-color: #2c2f33;
