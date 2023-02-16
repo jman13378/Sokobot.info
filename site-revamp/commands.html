@@ -2,18 +2,32 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y9K1JEJHV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-3Y9K1JEJHV"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-3Y9K1JEJHV');
-</script>
+    gtag("config", "G-3Y9K1JEJHV");
+  </script>
   <!--      CSS       -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js" integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+    integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   <link href="CSS/general/general.css" rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"
+  ></script>
   <script
     async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6609271620198718"
@@ -42,74 +56,203 @@
     content="https://github.com/jman13378/Sokobot.info/blob/main/img/logo.jpg"
   />
 
-  <link
-    rel="icon"
-    href="../img/logo.jpg"
-    type="image/jpg"
-  />
-
+  <link rel="icon" href="../img/logo.jpg" type="image/jpg" />
 </head>
 
-<div class="includes-w"w3-include-html="navbar.html"></div>
-
+<div class="includes-w" w3-include-html="navbar.html"></div>
 
 <body>
-<div class="left-align center">
-<button class="btn indigo " href="https://invite.sokobot.info">Invite</button>
-</div>
-<style>
+  <style>
     .section {
-        margin-top:3%;
-        background-color: #2c2f33;
-        border: solid #7289da 5px;
-        border-radius: 1000px;
-        font-family: "Black Ops one";
-        padding-left: 3%;
-        padding-right: 3%;
+      margin-top: 3%;
+      background-color: #2c2f33;
+      border: solid #7289da 5px;
+      border-radius: 1000px;
+      font-family: "Black Ops one";
+      padding-left: 3%;
+      padding-right: 3%;
     }
     .section-header {
-        text-align: center;
-        color:#99aab5
+      text-align: center;
+      color: #99aab5;
     }
     .section-body {
-        color:#dae0e4
+      color: #dae0e4;
     }
     .b {
-        content: "";
- width: 95%;
- border-bottom: 2px solid black;
+      content: "";
+      width: 95%;
+      border-bottom: 2px solid black;
     }
-</style>
-<div style="display:flex; flex-wrap: wrap; justify-content: space-evenly;">
+  </style>
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly">
     <div class="section">
-        <div class="section-header">Help</div>
-        <p class="b"></p>
-        <div class="section-body">Usage: /help <a class="grey-text">OR</a> !help</div>
-        <div class="section-body">Description: Will give you a help menu to choose from topics</div>
+      <div class="section-header">Help</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /help <a class="grey-text">OR</a> !help
+      </div>
+      <div class="section-body">
+        Description: Will give you a help menu to choose from topics
+      </div>
     </div>
     <div class="section">
-        <div class="section-header">Play</div>
-        <p class="b"></p>
-        <div class="section-body">Usage: /play [character] <a class="grey-text">OR</a> !play [character]</div>
-        <div class="section-body">Description: Will allow you to start a Game of Sokoban</div>
+      <div class="section-header">Play</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /play [character] <a class="grey-text">OR</a> !play [character]
+      </div>
+      <div class="section-body">
+        Description: Will allow you to start a Game of Sokoban
+      </div>
     </div>
     <div class="section">
-        <div class="section-header">Stop</div>
-        <p class="b"></p>
-        <div class="section-body">Usage: /stop <a class="grey-text">OR</a> !stop</div>
-        <div class="section-body">Description: Allows you to end a Game of Sokoban if one is present</div>
+      <div class="section-header">Stop</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /stop <a class="grey-text">OR</a> !stop
+      </div>
+      <div class="section-body">
+        Description: Allows you to end a Game of Sokoban if one is present
+      </div>
     </div>
-</div>
+    <div class="section">
+      <div class="section-header">Info</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /info <a class="grey-text">OR</a> !info
+      </div>
+      <div class="section-body">
+        Description: Allows you to view info about the bot
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">Balance</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /balance <a class="grey-text">OR</a> !bal
+      </div>
+      <div class="section-body">
+        Description: Allows you to view yours or another users balance
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">Inventory</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /inventory <a class="grey-text">OR</a> !inv
+      </div>
+      <div class="section-body">
+        Description: Allows you to view your inventory or another users
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">Filet</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /filet <a class="grey-text">OR</a> !filet
+      </div>
+      <div class="section-body">Description: Allows you to filet your fish</div>
+    </div>
+    <div class="section">
+      <div class="section-header">Mine</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /mine <a class="grey-text">OR</a> !mine
+      </div>
+      <div class="section-body">Description: Allows the user to go mining</div>
+    </div>
+    <div class="section">
+      <div class="section-header">Fishing</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /fishing <a class="grey-text">OR</a> !fishing
+      </div>
+      <div class="section-body">
+        Description: Gives an embed with percentages and rarities
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">Fish</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /fish <a class="grey-text">OR</a> !fish
+      </div>
+      <div class="section-body">Description: Allows you to go fishing</div>
+    </div>
+    <div class="section">
+      <div class="section-header">Chop</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /chop <a class="grey-text">OR</a> !chop
+      </div>
+      <div class="section-body">Description: Allows you to chop a tree</div>
+    </div>
+    <div class="section">
+      <div class="section-header">Sell</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /sell [item] [amount] <a class="grey-text">OR</a> !sell [item]
+        [amount]
+      </div>
+      <div class="section-body">Description: Allows you to sell items</div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">Buy</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /buy [item] [amount] <a class="grey-text">OR</a> !buy [item]
+        [amount]
+      </div>
+      <div class="section-body">Description: Allows you to buy items</div>
+    </div>
+    <div class="section">
+      <div class="section-header">Help</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /help <a class="grey-text">OR</a> !help
+      </div>
+      <div class="section-body">
+        Description: Shows a help menu with all of the commands
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">Settings</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /settings [set|reset] [logchannel|prefix|all]
+        <a class="grey-text">OR</a> !prefix [character]
+      </div>
+      <div class="section-body">
+        Description: Allows the Admins to set the server settings
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">Vote</div>
+      <p class="b"></p>
+      <div class="section-body">
+        Usage: /vote <a class="grey-text">OR</a> !vote check | !vote links
+      </div>
+      <div class="section-body">
+        Description: Allows you to vote for the bot
+      </div>
+    </div>
+  </div>
+  <div style="padding-top: 2rem; padding-bottom: 1 rem"></div>
+  <div class="left-align center">
+    <button class="btn indigo" href="https://invite.sokobot.info">
+      Invite
+    </button>
+  </div>
 </body>
 
-<div class="includes-w"w3-include-html="footer.html"></div>
+<div class="includes-w" w3-include-html="footer.html"></div>
 <script>
-  let items=document.getElementsByClassName("includes-w")
-  for (let i = 0; i< items.length;i++) {
-    $(document).ready(function(e) {
-    $(items[i]).load(items[i].getAttribute("w3-include-html"));
-    })};
-  
-
-  </script>
-  
+  let items = document.getElementsByClassName("includes-w");
+  for (let i = 0; i < items.length; i++) {
+    $(document).ready(function (e) {
+      $(items[i]).load(items[i].getAttribute("w3-include-html"));
+    });
+  }
+</script>
