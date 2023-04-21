@@ -1,6 +1,48 @@
 
 <head>
-  
+  <script>
+    window.onload = function() {
+      let xhr = new XMLHttpRequest();
+
+      xhr.open("GET", "https://dashboard.sokobot.info/latestchanges");
+
+
+
+      
+
+      xhr.onreadystatechange = function () {
+
+        if (xhr.readyState === 4) {
+
+            
+
+            let res = JSON.parse(xhr.responseText)
+
+            let reser = res["body"].split("[newline]")
+            console.log(res)
+            let view = `
+                <center>
+                    <h2 class="updatetitle">${res["title"]}</h2>
+                    </center>
+                    <div class="updatebody">`
+for (let ee of reser) {
+    if (ee=="" || ee==" ") {
+        view +=`<br>`
+        continue
+    }
+view +=`<p>${ee}</p>`
+}
+
+            
+               view +=     `</div>
+                
+            `
+           document.getElementById("updatediv").innerHTML+=view
+        }};
+
+      xhr.send();
+    }
+  </script>
   <script type="text/javascript">
     (function(c) {
       var script = document.createElement("script");
@@ -104,10 +146,32 @@ Want to check out our site revamp?  Click Here
   </div>-->
   <div style="margin: 50px 0 50px 0"></div>
   <!--Spacer-->
-
+  <style>
+    .updatediv {
+        background-color: #070510;
+        color:white;
+        border: 2px black;
+        border-radius: 30%;
+        padding-bottom: 20%;
+        margin-right: 25%;
+        margin-left: 25%;
+        height: -webkit-fill-available;
+        opacity: 0.9;
+        display: flex;
+    }
+    .updatetitle {
+        padding-top: 10%
+        
+    }
+    .updatebody {
+        padding-left: 10%;
+    }
+</style>
   <div id="main-info">
     <br id="intro" />
+    <div class="updatediv">
 
+      </div>
     <p id="main-info-1">
       Sokobot is a Discord bot written with
       <u><a id="link" href="https://github.com/DV8FromTheWorld/JDA">JDA</a></u>
