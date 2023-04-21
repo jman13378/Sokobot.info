@@ -15,6 +15,7 @@ function moveToMobile() {
     let navdiv = document.getElementById('navtext-div');
     let navtext = document.getElementById('navtext');
     let logomain = document.getElementById('logo-main-1');
+    let udates = document.getElementById('updatediv');
     let mainbuttons = document.getElementById('main-buttons');
     let mainbuttons2 = document.getElementById('main-buttons-2');
     let mainbuttonss = document.getElementById('main-buttonss');
@@ -40,7 +41,7 @@ function moveToMobile() {
 
 
     
-
+    udates.style.display="block";
     mainbuttonss.style.display = "grid";
     mainbuttons.style.display = "grid";
     mainbuttons2.style.display = "grid";
