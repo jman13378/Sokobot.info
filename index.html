@@ -7,7 +7,7 @@
       xhr.open("GET", "https://dashboard.sokobot.info/latestchanges");
 
 
-
+      xhr.setRequestHeader("Access-Control-Allow-Origin", "https://sokobot.info")
       
 
       xhr.onreadystatechange = function () {
@@ -169,7 +169,7 @@ Want to check out our site revamp?  Click Here
 </style>
   <div id="main-info">
     <br id="intro" />
-    <div class="updatediv">
+    <div class="updatediv" id="updatediv">
 
       </div>
     <p id="main-info-1">
