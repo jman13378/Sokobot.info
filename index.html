@@ -17,7 +17,10 @@
             let reser = res["body"].split("[newline]")
             console.log(res)
             let view = `
+            <div>
                     <h2 class="updatetitle">${res["title"]}</h2>
+                    <p class="updatedate">${res["date"]}</p>
+                    <div>
                     <div class="updatebody">`
 for (let ee of reser) {
     if (ee=="" || ee==" ") {
@@ -152,6 +155,9 @@ Want to check out our site revamp?  Click Here
         height: -webkit-fill-available;
         opacity: 0.9;
         display: flex;
+    }
+    .updatedate {
+     padding-left: 50%; 
     }
     .updatetitle {
         padding-top: 10%;
